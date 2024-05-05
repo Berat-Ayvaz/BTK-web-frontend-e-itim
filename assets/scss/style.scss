@@ -124,10 +124,13 @@ a {
 
 .call-center {
     background-image: url("../img/background/call-center.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     padding: 110px 0;
+    
+
 }
 .call-center-card {
     background-color: #ffffff;
@@ -327,6 +330,9 @@ a {
     }
     .slider-main {
         --slider-height: 80dvh;
+        @media(min-width:768px){
+        --slider-height:60dvh
+        }
 
         &-content {
             display: flex;
@@ -506,9 +512,12 @@ footer {
     .footer-link-social {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        // justify-content: flex-end;
         height: 100%;
         gap: 30px;
+        @media(min-width:992px){
+            justify-content:flex-end;
+        }
         a {
             display: flex;
             align-items: center;
