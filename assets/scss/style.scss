@@ -124,13 +124,12 @@ a {
 
 .call-center {
     background-image: url("../img/background/call-center.jpg");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     padding: 110px 0;
-    
-
+    background-attachment: fixed;
+ //Arka planı iç tarafa gömmeyi sağlıyor ve böylece yazılar üstünden geçip gidiyor.
 }
 .call-center-card {
     background-color: #ffffff;
